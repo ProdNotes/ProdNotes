@@ -1,76 +1,163 @@
-# RNV
+# ProdNotes
 
-Cloud & Platform Engineer focused on building **production-grade infrastructure and delivery systems**.
+## Principal Cloud & Platform Architect (SaaS / Product)
 
-I work at the intersection of cloud architecture, DevOps, and platform reliability — designing systems that are **boring to operate, predictable to scale, and easy to reason about**.
+I design and lead **large-scale, production-grade cloud platforms** serving **millions of users and hundreds of microservices**. My work focuses on turning complex distributed systems into **standardized, reliable, and developer-friendly platforms**.
+
+I operate at the intersection of **architecture, platform engineering, and organizational scale** — making decisions that balance reliability, cost, security, and developer experience.
 
 ---
 
-## Focus Areas
+## Architecture Scope & Ownership
 
-- Cloud infrastructure design and operations
-- Platform engineering & internal developer platforms
-- CI/CD systems and deployment automation
-- Kubernetes-based runtime platforms
-- Infrastructure as Code and system standardization
-- Observability, reliability, and operational readiness
+I currently **own or directly influence**:
+
+* Overall cloud and platform architecture
+* Standards and reference architectures across teams
+* Tooling selection (CI/CD, IaC, observability)
+* Cross-team technical decision-making
+* Cost, reliability, and security trade-offs
+* Migration and modernization strategies
+
+I act as a **final technical decision-maker** and strong influencer, setting direction while enabling teams to execute independently.
+
+---
+
+## Scale & Impact
+
+* **Traffic:** ~100k requests/second
+* **Users:** ~1.1 million
+* **Architecture:** 200+ microservices (single client)
+* **Environments:** Dev → Prod, multi-region
+* **Teams Impacted:** 10+ engineering teams
+
+This scale has shaped my approach toward **standardization, guardrails, and platform abstractions** over bespoke solutions.
+
+---
+
+## Architecture I’ve Designed
+
+### Feature-Flag–Driven CI/CD Platform
+
+Designed a **platform-level CI/CD system** where deployment capabilities are enabled via **feature flags**, removing the need for teams to maintain complex Helm charts.
+
+**Capabilities abstracted behind flags:**
+
+* Horizontal Pod Autoscaling (HPA)
+* Progressive delivery and rollout strategies
+* Autoscaling policies
+* Secure networking patterns (DMZ / VSR)
+* Operational add-ons (Kanister, observability hooks)
+
+**Outcome:**
+
+* Dramatically improved developer experience
+* Consistent deployments across 200+ services
+* Reduced configuration drift and human error
+
+---
+
+### End-to-End Performance Testing Platform
+
+Architected a fully automated **performance testing pipeline** using JMeter, integrated into CI/CD.
+
+**Key characteristics:**
+
+* Automated provisioning of JMeter controllers and workers
+* End-to-end test execution orchestration
+* Results published to S3 and visualized via a web application
+* Automatic teardown of infrastructure post-test
+* Sustained load testing up to **60k RPS**
+
+**Outcome:**
+
+* Repeatable, cost-efficient performance testing
+* Zero manual intervention
+* Clear visibility for engineering and leadership
+
+---
+
+## Modernization & Failure Learnings
+
+Not all failures were technical.
+
+A major challenge was **organizational inertia** — teams continuing to use legacy CI/CD approaches that created instability and slow delivery.
+
+I led the modernization of delivery pipelines by introducing:
+
+* Structured build → unit test → deploy → test workflows
+* GitOps-driven deployments using Flux CD
+* Standardized pipelines with enforced best practices
+
+**Result:**
+
+* Reduced deployment defects
+* Faster feedback loops
+* Measurable improvement in reliability and confidence
+
+---
+
+## Delivery Mindset
+
+✔ I deliver systems **end-to-end** — from architecture and standards to implementation and operational readiness.
+
+However, my focus is increasingly on **platforms over projects**, enabling multiple teams to move faster with fewer mistakes.
+
+---
+
+## Engineering Priorities (Ranked)
+
+1. Reliability
+2. Cost efficiency
+3. Security & compliance
+4. Developer experience
 
 ---
 
 ## Technical Stack
 
 **Cloud**
-- AWS
+
+* AWS
 
 **Containers & Platforms**
-- Docker
-- Kubernetes
+
+* Docker
+* Kubernetes
 
 **Infrastructure as Code**
-- Terraform
 
-**CI/CD**
-- GitHub Actions
-- Azure DevOps
+* Terraform
+
+**CI/CD & GitOps**
+
+* GitHub Actions
+* Azure DevOps
+* Flux CD
 
 **Observability**
-- Prometheus
-- Grafana
+
+* Prometheus
+* Grafana
 
 **Systems**
-- Linux
-- Bash
 
----
-
-## Engineering Principles
-
-- Production systems favor clarity over cleverness  
-- Automation is a prerequisite, not an optimization  
-- Reliability and operability are first-class features  
-- Documentation is part of the system  
-- Consistency scales better than heroics  
-
----
-
-## What You’ll Find Here
-
-- End-to-end infrastructure and platform examples
-- Opinionated but practical implementations
-- Repositories that reflect **real operational concerns**
-- Minimal demos — maximal focus on maintainability
+* Linux
+* Bash
 
 ---
 
 ## Current Direction
 
-Building and refining reusable infrastructure patterns that mirror **real-world production environments**, with emphasis on:
-- repeatability
-- safety
-- operational confidence
+I’m evolving toward a **Principal Engineer / Architect role** in SaaS and product environments, focused on:
+
+* Platform architectures that scale across teams
+* Reusable infrastructure patterns
+* Reducing cognitive load for developers
+* Designing systems that are boring to operate — and hard to break
 
 ---
 
-🌐 **https://prodnotes.dev**
+🌐 **[https://prodnotes.dev](https://prodnotes.dev)**
 
-> This profile is intentionally anonymous and focused solely on engineering work.
+> This profile is intentionally anonymous and focused solely on architecture, systems thinking, and production-scale engineering.
