@@ -1,163 +1,98 @@
-# ProdNotes
+# ProdNotes  
+**Principal Cloud & Platform Architect (SaaS / Product)**
 
-## Principal Cloud & Platform Architect (SaaS / Product)
-
-I design and lead **large-scale, production-grade cloud platforms** serving **millions of users and hundreds of microservices**. My work focuses on turning complex distributed systems into **standardized, reliable, and developer-friendly platforms**.
-
-I operate at the intersection of **architecture, platform engineering, and organizational scale** — making decisions that balance reliability, cost, security, and developer experience.
+Designing **production-grade cloud platforms** that scale to millions of users, hundreds of services, and multiple teams — with reliability, cost efficiency, and developer experience as first-class concerns.
 
 ---
 
-## Architecture Scope & Ownership
-
-I currently **own or directly influence**:
-
-* Overall cloud and platform architecture
-* Standards and reference architectures across teams
-* Tooling selection (CI/CD, IaC, observability)
-* Cross-team technical decision-making
-* Cost, reliability, and security trade-offs
-* Migration and modernization strategies
-
-I act as a **final technical decision-maker** and strong influencer, setting direction while enabling teams to execute independently.
+## 🧭 Architecture Focus
+- Cloud & platform architecture (AWS)
+- Platform engineering & internal developer platforms
+- CI/CD systems as platforms (not pipelines)
+- Kubernetes runtime platforms at scale
+- Infrastructure as Code & standardization
+- Observability, reliability, and operational readiness
 
 ---
 
-## Scale & Impact
-
-* **Traffic:** ~100k requests/second
-* **Users:** ~1.1 million
-* **Architecture:** 200+ microservices (single client)
-* **Environments:** Dev → Prod, multi-region
-* **Teams Impacted:** 10+ engineering teams
-
-This scale has shaped my approach toward **standardization, guardrails, and platform abstractions** over bespoke solutions.
+## ⚙️ Scale & Impact
+- **Traffic:** ~100k requests/sec  
+- **Users:** ~1.1 million  
+- **Services:** 200+ microservices  
+- **Environments:** Multi-region (Dev → Prod)  
+- **Teams Enabled:** 10+
 
 ---
 
-## Architecture I’ve Designed
+## 🛠 Core Stack
 
-### Feature-Flag–Driven CI/CD Platform
+### ☁️ Cloud & Platforms
+![AWS](https://img.shields.io/badge/AWS-000000?logo=amazonaws&logoColor=FF9900)
+![Docker](https://img.shields.io/badge/Docker-000000?logo=docker)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-000000?logo=kubernetes)
 
-Designed a **platform-level CI/CD system** where deployment capabilities are enabled via **feature flags**, removing the need for teams to maintain complex Helm charts.
+### 🚀 Infrastructure & Delivery
+![Terraform](https://img.shields.io/badge/Terraform-000000?logo=terraform&logoColor=7B42BC)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-000000?logo=githubactions)
+![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-000000?logo=azuredevops&logoColor=0078D7)
+![Flux CD](https://img.shields.io/badge/FluxCD-000000?logo=flux)
 
-**Capabilities abstracted behind flags:**
+### 📊 Observability
+![Prometheus](https://img.shields.io/badge/Prometheus-000000?logo=prometheus)
+![Grafana](https://img.shields.io/badge/Grafana-000000?logo=grafana)
 
-* Horizontal Pod Autoscaling (HPA)
-* Progressive delivery and rollout strategies
-* Autoscaling policies
-* Secure networking patterns (DMZ / VSR)
-* Operational add-ons (Kanister, observability hooks)
-
-**Outcome:**
-
-* Dramatically improved developer experience
-* Consistent deployments across 200+ services
-* Reduced configuration drift and human error
-
----
-
-### End-to-End Performance Testing Platform
-
-Architected a fully automated **performance testing pipeline** using JMeter, integrated into CI/CD.
-
-**Key characteristics:**
-
-* Automated provisioning of JMeter controllers and workers
-* End-to-end test execution orchestration
-* Results published to S3 and visualized via a web application
-* Automatic teardown of infrastructure post-test
-* Sustained load testing up to **60k RPS**
-
-**Outcome:**
-
-* Repeatable, cost-efficient performance testing
-* Zero manual intervention
-* Clear visibility for engineering and leadership
+### 🖥 Systems
+![Linux](https://img.shields.io/badge/Linux-000000?logo=linux)
+![Bash](https://img.shields.io/badge/Bash-000000?logo=gnubash)
 
 ---
 
-## Modernization & Failure Learnings
+## 🧩 Architecture Case Studies
 
-Not all failures were technical.
+### 🚦 Feature-Flag–Driven CI/CD Platform
+Designed a **platform-level CI/CD system** where deployment capabilities are enabled via feature flags instead of per-service Helm complexity.
 
-A major challenge was **organizational inertia** — teams continuing to use legacy CI/CD approaches that created instability and slow delivery.
+- Autoscaling, rollout strategies, operational add-ons
+- Secure networking patterns (DMZ / VSR)
+- Consistent deployments across 200+ services
 
-I led the modernization of delivery pipelines by introducing:
-
-* Structured build → unit test → deploy → test workflows
-* GitOps-driven deployments using Flux CD
-* Standardized pipelines with enforced best practices
-
-**Result:**
-
-* Reduced deployment defects
-* Faster feedback loops
-* Measurable improvement in reliability and confidence
+**Outcome:** Strong developer experience, reduced deployment risk, standardized delivery.
 
 ---
 
-## Delivery Mindset
+### 📈 Automated Performance Testing Platform
+Architected an end-to-end CI/CD-integrated performance testing system using JMeter.
 
-✔ I deliver systems **end-to-end** — from architecture and standards to implementation and operational readiness.
-
-However, my focus is increasingly on **platforms over projects**, enabling multiple teams to move faster with fewer mistakes.
-
----
-
-## Engineering Priorities (Ranked)
-
-1. Reliability
-2. Cost efficiency
-3. Security & compliance
-4. Developer experience
+- Automated controller & worker provisioning
+- Load testing up to **60k RPS**
+- Results stored in S3 with web-based visualization
+- Automatic teardown for cost efficiency
 
 ---
 
-## Technical Stack
-
-**Cloud**
-
-* AWS
-
-**Containers & Platforms**
-
-* Docker
-* Kubernetes
-
-**Infrastructure as Code**
-
-* Terraform
-
-**CI/CD & GitOps**
-
-* GitHub Actions
-* Azure DevOps
-* Flux CD
-
-**Observability**
-
-* Prometheus
-* Grafana
-
-**Systems**
-
-* Linux
-* Bash
+## 🧠 Architecture Philosophy
+- Production systems favor clarity over cleverness  
+- Automation is mandatory, not optional  
+- Reliability and operability are first-class features  
+- Platforms should reduce cognitive load  
+- Consistency scales better than heroics  
 
 ---
 
-## Current Direction
+## 📊 GitHub Activity
 
-I’m evolving toward a **Principal Engineer / Architect role** in SaaS and product environments, focused on:
-
-* Platform architectures that scale across teams
-* Reusable infrastructure patterns
-* Reducing cognitive load for developers
-* Designing systems that are boring to operate — and hard to break
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ProdNotes&show_icons=true&hide_title=true&hide_border=true&count_private=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ProdNotes&layout=compact&hide_border=true)
 
 ---
 
-🌐 **[https://prodnotes.dev](https://prodnotes.dev)**
+## 🎯 Current Direction
+Operating at **Principal Engineer / Architect** level, focused on:
+- Platform architectures that scale across teams
+- Reusable infrastructure patterns
+- Safe, predictable delivery systems
+- Designing systems that are boring to operate — and hard to break
+
+🌐 https://prodnotes.dev  
 
 > This profile is intentionally anonymous and focused solely on architecture, systems thinking, and production-scale engineering.
